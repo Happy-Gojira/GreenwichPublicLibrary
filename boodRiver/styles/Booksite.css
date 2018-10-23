@@ -4842,7 +4842,7 @@ img.thumbnail { max-height: 130px !important; max-width: 100px !important; -moz-
 
 .content-carousel__panel .c-accordion__body { padding: 0.3125em 0 1em 0; }
 
-.content-carousel__slider { margin-left: -1em; display: inline-block; width: 118px; }
+.content-carousel__slider { display: inline-block; width: 118px; }
 
 .content-carousel__link:link, .content-carousel__link:visited { text-decoration: none; }
 
