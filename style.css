@@ -1,0 +1,137 @@
+/**Hides Moble only Header**/
+.mobile-hours-header{
+  display:none;
+  font-size: 18px;
+}
+.hours-address-search{
+  float:right;
+}
+/**Image carousel**/
+.content-carousel__slider{
+  max-width:85% !important;
+}
+/*Search input */
+#q {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: url(https://grntest.sals.edu/wp-content/uploads/2018/07/search_greenArtboard-1.svg) 5px 50% no-repeat #fff;
+  padding: 8px 8px 8px 43px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  outline: 0;
+  border: 1px solid #4c8b2b;
+  width: 290px;
+  margin: 0 5px 0 0
+}
+input{
+	  -webkit-appearance: none;
+}
+
+#search-button {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #4c8b2b;
+  border: 0;
+  padding: 8px 13px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  outline: 0;
+  margin: 1% 0% 0% 0%;
+}
+/* Padding in masthead and header*/
+#masthead .hgroup {
+    zoom: 1;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+#search {
+  padding-top: 5px
+}
+
+#search form {
+  display:flex;
+  justify-content:end;
+}
+
+/**Nav bar**/
+.main-navigation{
+	border-bottom: 4px solid #f38b00;
+	border-top: 4px solid #f38b00;
+}
+
+#header-sidebar{padding-top:5px;}
+.hours-header, .address-header, .phone-header{
+	font-size: 18px;
+}
+.header-info-search-widget{
+	width:50%;
+}
+.header-logo-widget{
+  width:30%;
+}
+/*Style font Awesome Icons*/
+.fa{
+	color:#5E3327;
+  margin-right:.4em;
+}
+#mast-email{
+  font-size:1.5em;
+}
+
+ /*links */
+a:link, a:visited, a:hover, a:active{
+    color: #5e3327;
+}
+
+
+/*Styling the Hours section*/
+.hours-header{
+  display:flex;
+}
+.hours-header ul{
+	display: flex;
+  flex-wrap: wrap;
+
+}
+ul.hours-header li{
+  margin-right:.4em;
+}
+
+/*Line Spacing in header Widget*/
+.hours-header{
+	margin-bottom: .8em;
+}
+.address-header{
+  display:flex;
+
+}
+address{
+  margin: 0 0 0 0em;
+}
+
+/* Widen screen on boxed layout*/
+
+body.responsive #page-wrapper {
+	max-width: 80% !important;
+  padding-top: 0em;
+}
+
+
+
+@media only screen and (max-width: 780px) {
+  div.hours-header{
+		display:none;
+  }
+  .mobile-hours-header{
+  	display:block;
+  }
+  #search form {
+  flex-wrap:wrap;
+}
+
+}
