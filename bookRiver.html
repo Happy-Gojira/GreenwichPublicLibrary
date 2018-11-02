@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta name="vs_defaultClientScript" content="JavaScript" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+<script src="http://pac.sals.edu/ContentXChange/scripts/title.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js" type="text/javascript"></script>
+<script src="http://pac.sals.edu/ContentXChange/scripts/search.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="http://pac.sals.edu/ContentXChange/content/shared/styles.css?ver=6.0.214.0">
+<link type="text/css" rel="stylesheet" href="http://pac.sals.edu/polaris/themes/ocean/site.css?ver=6.0.214.0">
+<style type="text/css"> html { /* start ios hack */ width: 1px; min-width: 100%; /* end ios hack */ } body { background-color: white !important; margin: 1em inherit; } .content-carousel__slider { font-size: .875rem; margin: .5em 48px !important; width: calc(100% - 116px) !important; } </style>
+<title>Carousel</title>
+</head>
+<body>
+<script>
+var url = 'http://pac.sals.edu/ContentXChange/APICarouselToolKit/47/26/4?callback=?';
+$.getJSON(url, function (data) {{
+var Div1 = document.createElement("div");
+Div1.id = "id-drawer-head-xri" + data.CarrouselUniqueID;
+Div1.className = "statichead";
+Div1.innerHTML = data.CarouselName;
+var Div2 = document.createElement("div");
+Div2.id = "id-drawer-body-xri" + data.CarrouselUniqueID;
+Div2.className = "drawer-body";
+Div2.innerHTML = data.Carousel_Str;
+ $("#div1").append(Div1);
+ $("#div1").append(Div2);
+ var DivName = "#" + data.CarrouselUniqueID
+ var nItems = data.nCarLength
+ if (nItems > 0)
+ {{
+   jQuery(DivName).slick({
+      dots: false,
+      infinite: true,
+      variableWidth: true,
+      nextArrow: " <button type='button' class='content-carousel__right-arrow' aria-label='Carousel move right'><i class='glyphicon glyphicon-menu-right'></i></button>",
+      prevArrow: "<button type='button' class='content-carousel__left-arrow' aria-label='Carousel move left'><i class='glyphicon glyphicon-menu-left'></i></button>",
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      mobileFirst: false
+   });
+
+   var layoutManager = ContentCarouselLayoutManager.getInstance();
+   layoutManager.autoLayout(DivName);
+ }}
+ else
+ {{
+ var Div3 = document.createElement("div");
+ Div3.id = "id-drawer-body-xri" + "NoItemsFound";
+ Div3.className = "drawer-body2";
+ Div3.innerHTML = "No titles are available for display at this time.  For more information, please consult with a library staff member.";
+ $("#div1").append(Div3);
+ }}
+}});
+</script>
+<div id="div1">
+</div>
+</body>
+</html>

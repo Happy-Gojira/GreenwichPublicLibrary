@@ -4860,7 +4860,7 @@ img.thumbnail { max-height: 130px !important; max-width: 100px !important; -moz-
 
 .content-carousel__title { text-align: left; }
 
-.content-carousel__left-arrow, .content-carousel__right-arrow { background-color: transparent; border: none; color: #217CB5; display: block; font-size: 2em; height: 20px; outline: none; padding: 0; position: absolute; top: 40%; /*  fallback for browsers without support for calc() */ top: calc(50% - 25px); width: 20px; }
+.content-carousel__left-arrow, .content-carousel__right-arrow { background-color: transparent; border: none; color: #217CB5; display: block; font-size: 1em; outline: none; padding: 0; position: absolute; top: 40%; /*  fallback for browsers without support for calc() */ top: calc(50% - 25px); width: 20px; }
 
 .content-carousel__left-arrow:hover, .content-carousel__right-arrow:hover { color: #30465b; cursor: pointer; }
 

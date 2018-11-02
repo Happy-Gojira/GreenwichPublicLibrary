@@ -1,7 +1,6 @@
 /**Hides Moble only Header**/
-.mobile-hours-header{
+.hours-header-mobile{
   display:none;
-  font-size: 18px;
 }
 .hours-address-search{
   float:right;
@@ -9,7 +8,12 @@
 /**Image carousel**/
 .content-carousel__slider{
   max-width:85% !important;
+  box-sizing: border-box;
 }
+
+
+
+
 /*Search input */
 #q {
   -webkit-border-radius: 25px;
@@ -65,7 +69,8 @@ input{
 }
 
 #header-sidebar{padding-top:5px;}
-.hours-header, .address-header, .phone-header{
+
+.hours-header-desktop, .hours-header-mobile, .address-header, .phone-header{
 	font-size: 18px;
 }
 .header-info-search-widget{
@@ -90,20 +95,20 @@ a:link, a:visited, a:hover, a:active{
 
 
 /*Styling the Hours section*/
-.hours-header{
+.hours-header-desktop{
   display:flex;
 }
-.hours-header ul{
+.hours-header-desktop ul{
 	display: flex;
   flex-wrap: wrap;
 
 }
-ul.hours-header li{
+ul.hours-header-desktop li{
   margin-right:.4em;
 }
 
 /*Line Spacing in header Widget*/
-.hours-header{
+.hours-header-desktop{
 	margin-bottom: .8em;
 }
 .address-header{
@@ -120,18 +125,26 @@ body.responsive #page-wrapper {
 	max-width: 80% !important;
   padding-top: 0em;
 }
+/*book river*/
+#div1.bookriver{
+  line-height:1em;
+}
+
 
 
 
 @media only screen and (max-width: 780px) {
-  div.hours-header{
-		display:none;
+	/**hours desktop hide**/
+  .hours-header-desktop{
+  	display:none;
   }
-  .mobile-hours-header{
-  	display:block;
+  /**hours mobile display**/
+	.hours-header-mobile{
+  	display:flex;
+    flex-direction:column;
   }
   #search form {
-  flex-wrap:wrap;
-}
+  	flex-wrap:wrap;
+	}
 
 }
