@@ -5,13 +5,6 @@
 .hours-address-search{
   float:right;
 }
-/**Image carousel**/
-.content-carousel__slider{
-  max-width:85% !important;
-  box-sizing: border-box;
-}
-
-
 
 
 /*Search input */
@@ -29,9 +22,10 @@
   width: 290px;
   margin: 0 5px 0 0
 }
+/*
 input{
 	  -webkit-appearance: none;
-}
+}*/
 
 #search-button {
   -webkit-border-radius: 25px;
@@ -54,7 +48,7 @@ input{
     padding-bottom: 15px;
 }
 #search {
-  padding-top: 5px
+  padding-top: 15px
 }
 
 #search form {
@@ -118,17 +112,17 @@ ul.hours-header-desktop li{
 address{
   margin: 0 0 0 0em;
 }
+.phone-header{
+  margin-right: 15px;
+}
 
 /* Widen screen on boxed layout*/
-
 body.responsive #page-wrapper {
-	max-width: 80% !important;
   padding-top: 0em;
 }
-/*book river*/
-#div1.bookriver{
-  line-height:1em;
-}
+
+
+
 
 
 
@@ -146,5 +140,22 @@ body.responsive #page-wrapper {
   #search form {
   	flex-wrap:wrap;
 	}
+  #search-button{
+    display: none;
+  }
+  body.responsive #page-wrapper{
+  	max-width:1080px !important;
+  }
+	.so-widget-image{
+  margin-left: auto;
+  margin-right: auto;
+  }
+  /* Padding in masthead and header*/
+	#masthead .hgroup {
+    padding-bottom: 0px;
+	}
+  #masthead-widgets .widget{
+  	padding-bottom: 0px !important;
+  }
 
 }
