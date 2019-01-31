@@ -1,3 +1,7 @@
+#main{
+  padding-top: 10px;
+}
+
 /**Hides Moble only Header**/
 .hours-header-mobile{
   display:none;
@@ -107,19 +111,19 @@ ul.hours-header-desktop li{
 }
 .address-header{
   display:flex;
+  margin: 0 0 0.5em;
 
 }
-address{
-  margin: 0 0 0 0em;
-}
+
 .phone-header{
   margin-right: 15px;
 }
-
-/* Widen screen on boxed layout*/
+/* Removes top padding on boxed layout*/
 body.responsive #page-wrapper {
   padding-top: 0em;
 }
+
+
 
 
 
